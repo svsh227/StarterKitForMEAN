@@ -1,0 +1,26 @@
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+<script src="app.js"></script>
+<script src="./controllers/homeController.js"></script>
+<script src="./services/searchServices.js"></script>
+
+<head>
+    <base href='/home'> <!-- To remove hash bang #!-->
+</head>
+<!--<link href="style.css" rel="stylesheet">-->
+
+<body ng-app="myApp">
+    <h1>Index Page</h1>
+    <ul>
+        <li><a href="search">SEARCH</a></li>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/test">TEST</a></li>
+        <!--hash bang #!-->
+    </ul>
+    <div ng-view></div>
+    </dody>
+
+</html>
